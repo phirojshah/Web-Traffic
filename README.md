@@ -142,4 +142,4 @@ If you find this tool useful, please consider giving it a star on GitHub! Your s
 - [Tor Project](https://www.torproject.org/) - Anonymous network
 
 ---
-Made with ❤️ by [Your Name]
+Made with ❤️ by PhirojShah
