@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# Display banner and credit
+echo "
+██╗    ██╗███████╗██████╗     ████████╗██████╗  █████╗ ███████╗███████╗██╗ ██████╗
+██║    ██║██╔════╝██╔══██╗    ╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██╔════╝██║██╔════╝
+██║ █╗ ██║█████╗  ██████╔╝       ██║   ██████╔╝███████║█████╗  █████╗  ██║██║     
+██║███╗██║██╔══╝  ██╔══██╗       ██║   ██╔══██╗██╔══██║██╔══╝  ██╔══╝  ██║██║     
+╚███╔███╔╝███████╗██████╔╝       ██║   ██║  ██║██║  ██║██║     ██║     ██║╚██████╗
+ ╚══╝╚══╝ ╚══════╝╚═════╝        ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝     ╚═╝ ╚═════╝
+                                                                                    
+Created by: Phiroj Shah
+Version: 1.0.0
+"
+
 # Configuration
 SOCKS_PORT="9050"
 CONTROL_PORT="9051"
@@ -106,7 +119,6 @@ renew_tor_ip() {
     fi
 }
 
-# Rest of the functions remain the same
 get_random_user_agent() {
     echo "${USER_AGENTS[$RANDOM % ${#USER_AGENTS[@]}]}"
 }
@@ -182,3 +194,11 @@ done < "$TEMP_PATHS_FILE"
 
 # Cleanup
 rm -f "$TEMP_PATHS_FILE"
+
+# Display completion message
+echo "
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                        Traffic Generation Complete!
+                        Created by: Phiroj Shah
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+"
